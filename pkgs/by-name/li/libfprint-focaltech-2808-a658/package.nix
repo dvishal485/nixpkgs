@@ -1,4 +1,19 @@
-{ stdenv, lib, fetchurl, rpm, cpio, glib, gusb, pixman, libgudev, nss, libfprint, cairo, pkg-config, autoPatchelfHook }:
+{
+  stdenv,
+  lib,
+  fetchurl,
+  rpm,
+  cpio,
+  glib,
+  gusb,
+  pixman,
+  libgudev,
+  nss,
+  libfprint,
+  cairo,
+  pkg-config,
+  autoPatchelfHook,
+}:
 
 # https://discourse.nixos.org/t/request-for-libfprint-port-for-2808-a658/55474
 stdenv.mkDerivation rec {
@@ -57,4 +72,3 @@ stdenv.mkDerivation rec {
     sourceProvenance = with sourceTypes; [ binaryNativeCode ];
   };
 }
-
