@@ -12,7 +12,8 @@ stdenv.mkDerivation rec {
   };
 
   nativeBuildInputs = [
-    rpm cpio
+    rpm
+    cpio
     pkg-config
     autoPatchelfHook
   ];
