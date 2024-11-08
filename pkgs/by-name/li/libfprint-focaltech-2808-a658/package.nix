@@ -70,6 +70,7 @@ stdenv.mkDerivation rec {
     ln -s -T $out/lib/${libso} $out/lib/libfprint-2.so
     ln -s -T $out/lib/${libso} $out/lib/libfprint-2.so.2
 
+    # generate pkg-config file
     mkdir $out/lib/pkgconfig
     cat <<EOF >$out/lib/pkgconfig/libfprint-2.pc
     ${pcText}
